@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="30dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="30dp"
+    tools:context="com.example.gan.moneymanager.MainActivity">
+
+    <TextView
+        android:id="@+id/BillAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bill_amount_label" />
+
+    <TextView
+        android:id="@+id/PaymentTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_type_label"
+        android:layout_below="@+id/BillAmountTextView"
+        android:layout_alignLeft="@+id/BillAmountTextView"
+        android:layout_alignStart="@+id/BillAmountTextView"
+        android:layout_marginTop="40dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/PurposeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/purpose_label"
+        android:layout_below="@+id/PaymentTypeTextView"
+        android:layout_alignLeft="@+id/PaymentTypeTextView"
+        android:layout_alignStart="@+id/PaymentTypeTextView"
+        android:layout_marginTop="40dp"
+        />
+
+    <EditText
+        android:id="@+id/billAmountEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/BillAmountTextView"
+        android:layout_marginLeft="150dp"
+        />
+
+
+    <Button
+        android:id="@+id/cashButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cash_label"
+
+
+        android:layout_alignBaseline="@+id/creditButton"
+        android:layout_alignBottom="@+id/creditButton"
+        android:layout_alignLeft="@+id/billAmountEditText"
+        android:layout_alignStart="@+id/billAmountEditText" />
+
+
+
+    <Button
+        android:id="@+id/creditButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/credit_label"
+        android:layout_toRightOf="@+id/cashButton"
+        android:layout_alignTop="@+id/PaymentTypeTextView"
+        />
+
+
+    <Button
+        android:id="@+id/debitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/debit_label"
+        android:layout_toRightOf="@+id/creditButton"
+        android:layout_alignTop="@+id/PaymentTypeTextView"
+        />
+
+
+    <EditText
+        android:id="@+id/PaymentPurposeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/sample_purpose"
+        android:layout_below="@+id/cashButton"
+        android:layout_alignLeft="@+id/cashButton"
+        />
+
+
+    <TextView
+        android:id="@+id/totalCashTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_cash_label"
+        android:layout_below="@+id/PurposeTextView"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/totalCashAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_cash_amount_label"
+        android:layout_alignBottom="@+id/totalCashTextView"
+        android:layout_alignLeft="@+id/cashButton"
+        android:layout_marginTop="40dp"
+        />
+
+
+    <TextView
+        android:id="@+id/totalCreditTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_credit_label"
+        android:layout_below="@+id/totalCashTextView"
+        android:layout_marginTop="40dp"
+        />
+
+
+    <TextView
+        android:id="@+id/totalCreditAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_credit_amount_label"
+        android:layout_alignBottom="@+id/totalCreditTextView"
+        android:layout_alignLeft="@+id/cashButton"
+        android:layout_marginTop="40dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/totalDebitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_debit_label"
+        android:layout_below="@+id/totalCreditTextView"
+        android:layout_marginTop="40dp"
+        />
+
+
+    <TextView
+        android:id="@+id/totalDebitAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_debit_amount_label"
+        android:layout_alignBottom="@+id/totalDebitTextView"
+        android:layout_alignLeft="@+id/cashButton"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/resetButtonTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/totalDebitTextView"
+        android:layout_marginTop="40dp"
+        android:text="@string/reset_button" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/resetButtonTextView"
+        android:layout_toLeftOf="@+id/creditButton"
+        android:layout_toStartOf="@+id/creditButton"
+        android:text="@string/reset_Button" />
+
+    <TextView
+        android:id="@+id/UndoButtonTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/resetButtonTextView"
+        android:layout_marginTop="40dp"
+        android:text="@string/undo_text_view" />
+
+    <Button
+        android:id="@+id/undoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/resetButton"
+        android:layout_alignStart="@+id/resetButton"
+        android:layout_alignTop="@+id/UndoButtonTextView"
+        android:text="@string/undo_button" />
+
+
+    <ListView
+        android:id="@+id/purpose_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/undoButton"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

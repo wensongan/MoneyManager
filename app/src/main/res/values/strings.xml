@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Money Manager</string>
+    <string name="bill_amount_label">Bill Amount:</string>
+    <string name="payment_type_label">Payment Type:</string>
+    <string name="purpose_label">Purpose of Payment:</string>
+    <string name="payment_purpose">Payment Purpose</string>
+    <string name="sample_purpose">Bought groceries</string>
+    <string name="cash_label">CASH</string>
+    <string name="credit_label">CREDIT</string>
+    <string name="debit_label">DEBIT</string>
+    <string name="total_cash_label">Total Cash:</string>
+    <string name="total_cash_amount_label">0</string>
+    <string name="total_credit_label">Total Credit:</string>
+    <string name="total_credit_amount_label">0</string>
+    <string name="total_debit_label">Total Debit:</string>
+    <string name="total_debit_amount_label">0</string>
+    <string name="reset_button">Reset Values:</string>
+    <string name="reset_Button">Reset</string>
+    <string name="undo_text_view">Undo:</string>
+    <string name="undo_button">UNDO</string>
+</resources>
